@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MED ASSIST R5 — AI Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖 AI ROBOTICS</div>
+  <nav>
+    <a href="x-series.html">X-Series</a>
+    <a href="about.html">About</a>
+    <a href="robots.html">Robots</a>
+    <a href="medassist.html">MedAssist</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h1><center>MEDASSIST R5</center></h1>
+
+  <div class="scroll-container">
+
+    <h2 class="pub-title">Publications & Projects:</h2>
+
+    <div class="pub-card">
+      <h3>Adaptive Perception:</h3>
+      <p>Low-latency sensor fusion for crowded environments.</p>
+    </div>
+
+    <div class="pub-card">
+      <h3>Reinforcement Systems:</h3>
+      <p>On-device learning for continuous improvement.</p>
+    </div>
+
+    <div class="pub-card">
+      <h3>Simulation:</h3>
+      <p>High-fidelity sim for robust deployment testing.</p>
+    </div>
+
+  </div>
+</section>
+</div>
+</section>
+<footer>© 2025 AI Robotics Innovation</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const path = location.pathname.split("/").pop().toLowerCase() || "medassist.html";
+  document.querySelectorAll("nav a").forEach(a=>{
+    if((a.getAttribute("href")||"").toLowerCase() === path) a.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>

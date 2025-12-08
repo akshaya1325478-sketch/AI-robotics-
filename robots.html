@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robots — AI Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖 AI ROBOTICS</div>
+  <nav>
+    <a href="x-series.html">X-Series</a>
+    <a href="about.html">About</a>
+    <a href="robots.html">Robots</a>
+    <a href="medassist.html">MedAssist</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h1><center>OUR ROBOTS</center></h1>
+  <br>
+  <div class="grid">
+    <div class="card">
+      <img src="AI image.jpg" alt="X-Series">
+      <h3><center>X-SERIES 12</center></h3>
+      <p><center><b>Human-like manipulator and mobile base for service tasks</b></center></p>
+    </div>
+    <br>
+
+    <div class="card">
+      <img src="aerobot.jpg" alt="Aerobot">
+      <h3><center>AEROBOT</center></h3>
+      <p><center><b>Industrial aerial drone for inspection and mapping</b></center></p>
+    </div>
+    <br>
+
+    <div class="card">
+      <img src="Robosurgery.jpg" alt="MedAssist R5">
+      <h3><center>MEDASSIST R5</center></h3>
+      <p><center><b>Medical-assist robot for hospitals and clinics</b></center></p>
+    </div>
+    <br>
+  </div>
+</section>
+
+<footer>© 2025 AI Robotics Innovation</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const path = location.pathname.split("/").pop().toLowerCase() || "robots.html";
+  document.querySelectorAll("nav a").forEach(a=>{
+    if((a.getAttribute("href")||"").toLowerCase() === path) a.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>

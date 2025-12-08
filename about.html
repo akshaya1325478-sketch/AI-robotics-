@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — AI Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖 AI ROBOTICS</div>
+  <nav>
+    <a href="x-series.html">X-Series</a>
+    <a href="about.html">About</a>
+    <a href="robots.html">Robots</a>
+    <a href="medassist.html">MedAssist</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h1><center>ABOUT US</Center></h1>
+  <p style="max-width:900px; margin:10px auto 0;">
+    <b><center>We are a research-driven robotics company building safe, assistive AI robots for industry and healthcare</center></b>
+    <b><br><center>Our team focuses on trustworthy autonomy, robust perception and human-centred design</br></center></b>
+  </p></b>
+</section>
+
+<section>
+  <h2 style="text-align:center;">OUR MISSION</h2>
+  <div class="grid">
+    <div class="card"><h3>Innovate</h3><p>Research in learning systems and control.</p></div>
+    <div class="card"><h3>Deploy</h3><p>Reliable field-ready robots for real-world tasks.</p></div>
+    <div class="card"><h3>Support</h3><p>Integration and ongoing updates for customers.</p></div>
+  </div>
+</section>
+
+<footer>© 2025 AI Robotics Innovation</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const path = location.pathname.split("/").pop().toLowerCase() || "about.html";
+  document.querySelectorAll("nav a").forEach(a=>{
+    if((a.getAttribute("href")||"").toLowerCase() === path) a.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>

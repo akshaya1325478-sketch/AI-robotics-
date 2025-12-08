@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>X-Series 12 — AI Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖 AI ROBOTICS</div>
+  <nav>
+    <a href="x-series.html">X-Series</a>
+    <a href="about.html">About</a>
+    <a href="robots.html">Robots</a>
+    <a href="medassist.html">MedAssist</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>X-SERIES 12</h1>
+    <p><b>Human-like capabilities, precise manipulation and adaptive learning</b></p>
+    <a class="btn" href="contact.html">Request Demo</a>
+  </div>
+
+  <div class="robot-illustration">
+    <img src="aerobot.jpg" alt="X-Series robot image" />
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">KEY FEATURES</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Machine Vision</h3>
+      <p>3D mapping, depth perception and obstacle avoidance.</p>
+    </div>
+    <br>
+    <div class="card">
+      <h3>Autonomous Learning</h3>
+      <p>On-device model updates and reinforcement learning.</p>
+    </div>
+    <br>
+    <div class="card">
+      <h3>Human Interaction</h3>
+      <p>Speech, gestures and natural conversation support.</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 AI Robotics Innovation</footer>
+
+<!-- main.js inline -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const path = location.pathname.split("/").pop().toLowerCase() || "x-series.html";
+  document.querySelectorAll("nav a").forEach(a=>{
+    if((a.getAttribute("href")||"").toLowerCase() === path) a.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>

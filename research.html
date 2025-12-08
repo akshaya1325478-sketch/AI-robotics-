@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research — AI Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖 AI ROBOTICS</div>
+  <nav>
+    <a href="x-series.html">X-Series</a>
+    <a href="about.html">About</a>
+    <a href="robots.html">Robots</a>
+    <a href="medassist.html">MedAssist</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h1><center>RESEARCH & DEVELOPMENT</center></h1>
+  <p style="max-width:900px; margin:10px auto;">
+    <center><b></b>Ongoing projects include adaptive control efficient perception stacks
+             and safe human-robot interaction</center>
+  </p>
+</section>
+
+<div class="wrapper">
+
+  <section class="pub-section">
+    <h2 class="pub-title">RESEARCH</h2>
+
+    <div class="pub-grid">
+      
+      <div class="pub-card">
+        <h3><b><center>NEUTRAL MOTION PLANNING</center></b></h3>
+        <p><center>AI-driven real-time path prediction for dynamic industrial floors</center></p>
+      </div>
+
+      <div class="pub-card">
+        <h3><b><center>ROBOTIC EMOTION MAPPING</center></b></h3>
+        <p><center>Deep-learning based sentiment detection for human-robot interaction</center></p>
+      </div>
+
+      <div class="pub-card">
+        <h3><b><center>ENEGRY-EFFICIENT AI CORES</b></center></h3>
+        <p><center>Next-gen processor design optimized for low-power edge robotics</center></p>
+      </div>
+
+      <div class="pub-card">
+        <h3><b><center>AUTONOMOUS SWARM COORDINATION</b></center></h3>
+        <p><center>Multi-robot cooperation framework for search & rescue missions</center></p>
+      </div>
+
+      <div class="pub-card">
+        <h3><b><center>HYBRID VISION SYSTEMS</center></b></h3>
+        <p><center>Combining lidar stereo vision, and IR mapping for high-accuracy detection</center></p>
+      </div>
+
+      <div class="pub-card">
+        <h3><b><center>SELF-HEALING ROBOTICS</b></center></h3>
+        <p><center>Research on adaptive algorithms enabling robots to self-recover faults</center></p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+<footer>© 2025 AI Robotics Innovation</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const path = location.pathname.split("/").pop().toLowerCase() || "research.html";
+  document.querySelectorAll("nav a").forEach(a=>{
+    if((a.getAttribute("href")||"").toLowerCase() === path) a.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
